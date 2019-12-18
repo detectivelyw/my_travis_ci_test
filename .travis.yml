@@ -10,7 +10,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh liyiwen@172.24.113.91 << EOF ls echo "Hello World!" EOF
+  script: echo "Hello World!" 
   on:
     branch: master
 before_install:
