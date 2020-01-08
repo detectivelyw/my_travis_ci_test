@@ -11,7 +11,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: ssh detectivelyw@192.168.0.20 -p 22 << EOF
+  script: ssh -i "Yiwen-Ubuntu.pem" ec2-user@ec2-54-224-101-104.compute-1.amazonaws.com << EOF
           ls
           EOF
   on:
